@@ -8,7 +8,7 @@
 /**
  * Implements hook_menu().
  */
-function header_and_footer_scripts_menu() {
+function hfs_menu() {
 
   $items['admin/config/development/header-and-footer-scripts'] = array(
     'title'            => 'Header and Footer Scripts',
@@ -59,7 +59,7 @@ function header_and_footer_scripts_menu() {
 /**
  * Implements hook_permission().
  */
-function header_and_footer_scripts_permission() {
+function hfs_permission() {
 
   $permissions['administer hfs module'] = array(
     'title'           => t('Add Scripts all over the site'),
@@ -73,7 +73,7 @@ function header_and_footer_scripts_permission() {
 /**
  * Implements hook_help().
  */
-function header_and_footer_scripts_help($path, $arg) {
+function hfs_help($path, $arg) {
   switch ($path) {
     case 'admin/help#header_and_footer_scripts':
 
@@ -108,7 +108,7 @@ function header_and_footer_scripts_help($path, $arg) {
  *
  * Add scripts on overall the site which are defined on the settings page.
  */
-function header_and_footer_scripts_process_html(&$variables) {
+function hfs_process_html(&$variables) {
 
   $header_scripts = variable_get('header_and_footer_scripts_header_settings');
   $body_scripts   = variable_get('header_and_footer_scripts_body_settings');

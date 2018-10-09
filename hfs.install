@@ -8,7 +8,7 @@
 /**
  * Implements hook_uninstall().
  */
-function header_and_footer_scripts_uninstall() {
+function hfs_uninstall() {
   variable_del("header_and_footer_scripts_header_settings");
   variable_del("header_and_footer_scripts_body_settings");
   variable_del("header_and_footer_scripts_footer_settings");
@@ -20,7 +20,7 @@ function header_and_footer_scripts_uninstall() {
  * Adding new configuration variables and updating current configuration
  * in it to avoid conflict with any other module.
  */
-function header_and_footer_scripts_update_7200() {
+function hfs_update_7200() {
   $header = variable_get('hfs_header_scripts');
   $body   = variable_get('hfs_body_scripts');
   $footer = variable_get('hfs_footer_scripts');

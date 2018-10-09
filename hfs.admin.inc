@@ -11,7 +11,7 @@
  * @return array
  *   Add styles and scripts in header.
  */
-function header_and_footer_scripts_header_settings($form, &$form_state) {
+function hfs_header_settings($form, &$form_state) {
   $header_section = variable_get('header_and_footer_scripts_header_settings');
 
   $form['header_and_footer_scripts_header'] = array(
@@ -47,7 +47,7 @@ function header_and_footer_scripts_header_settings($form, &$form_state) {
 /**
  * Submit handler().
  */
-function header_and_footer_scripts_header_settings_submit($form, &$form_state) {
+function hfs_header_settings_submit($form, &$form_state) {
   $header['styles'] = $form_state['values']['styles'];
   $header['scripts'] = $form_state['values']['scripts'];
   variable_set('header_and_footer_scripts_header_settings', $header);
@@ -59,7 +59,7 @@ function header_and_footer_scripts_header_settings_submit($form, &$form_state) {
  * @return array
  *   Add styles and scripts at the start of the body tag.
  */
-function header_and_footer_scripts_body_settings($form, &$form_state) {
+function hfs_body_settings($form, &$form_state) {
   $body_section = variable_get('header_and_footer_scripts_body_settings');
 
   $form['header_and_footer_scripts_body'] = array(
@@ -95,7 +95,7 @@ function header_and_footer_scripts_body_settings($form, &$form_state) {
 /**
  * Submit handler().
  */
-function header_and_footer_scripts_body_settings_submit($form, &$form_state) {
+function hfs_body_settings_submit($form, &$form_state) {
   $body['styles'] = $form_state['values']['styles'];
   $body['scripts'] = $form_state['values']['scripts'];
   variable_set('header_and_footer_scripts_body_settings', $body);
@@ -107,7 +107,7 @@ function header_and_footer_scripts_body_settings_submit($form, &$form_state) {
  * @return array
  *   Add styles and scripts in footer (before closing the body tag).
  */
-function header_and_footer_scripts_footer_settings($form, &$form_state) {
+function hfs_footer_settings($form, &$form_state) {
   $footer_section = variable_get('header_and_footer_scripts_footer_settings');
 
   $form['header_and_footer_scripts_footer'] = array(
@@ -143,7 +143,7 @@ function header_and_footer_scripts_footer_settings($form, &$form_state) {
 /**
  * Submit handler().
  */
-function header_and_footer_scripts_footer_settings_submit($form, &$form_state) {
+function hfs_footer_settings_submit($form, &$form_state) {
   $footer['styles'] = $form_state['values']['styles'];
   $footer['scripts'] = $form_state['values']['scripts'];
   variable_set('header_and_footer_scripts_footer_settings', $footer);
