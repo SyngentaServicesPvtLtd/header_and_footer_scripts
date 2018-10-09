@@ -1,5 +1,6 @@
-INTRODUCTION
-------------
+# HEADER AND FOOTER SCRIPTS
+
+## INTRODUCTION
 
 Header Footer Scripts module for Drupal 7.x.
 This module allows you to add style and scripts in different region of the page
@@ -9,20 +10,17 @@ This module adds the styles and scripts on all over the site. There are 3
 setting pages. These setting pages are allow you add the scripts
 in the desired region.
 
-REQUIREMENTS
-------------
+## REQUIREMENTS
 
 No special requirements.
 
-INSTALLATION
-------------
+## INSTALLATION
 
  * Install as you would normally install a contributed Drupal module. Visit:
    https://drupal.org/documentation/install/modules-themes/modules-7
    for further information.
 
-CONFIGURATION
--------------
+## CONFIGURATION
 
  * Configure user permissions in Administration » People » Permissions
 
@@ -34,10 +32,9 @@ CONFIGURATION
  * Add styles and scripts in settings on the Administer ->
    Configuration -> Development -> Header and Footer Scripts.
 
-MAINTAINERS
------------
+## MAINTAINERS
 
-Current maintainers:
+### Current maintainers:
  * Aliya Yasir (aliyayasir) - https://www.drupal.org/user/213804
  * Sami Ahmed Siddiqui (sasiddiqui) - https://www.drupal.org/user/3100375
 
