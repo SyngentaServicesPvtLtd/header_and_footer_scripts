@@ -11,7 +11,7 @@
 function hfs_menu() {
 
   $items['admin/config/development/hfs'] = array(
-    'title'            => 'HFS (Header Footer Scripts)',
+    'title'            => 'Header and Footer Scripts',
     'page callback'    => 'drupal_get_form',
     'page arguments'   => array('hfs_header_settings_form'),
     'access arguments' => array('administer hfs module'),
