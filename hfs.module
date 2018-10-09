@@ -13,7 +13,7 @@ function hfs_menu() {
   $items['admin/config/development/header-and-footer-scripts'] = array(
     'title'            => 'Header and Footer Scripts',
     'page callback'    => 'drupal_get_form',
-    'page arguments'   => array('header_and_footer_scripts_header_settings'),
+    'page arguments'   => array('hfs_header_settings'),
     'access arguments' => array('administer hfs module'),
     'description'      => 'Allow to add scripts and styles from the frontend under Head section.',
     'file'             => 'hfs.admin.inc',
@@ -23,7 +23,7 @@ function hfs_menu() {
   $items['admin/config/development/header-and-footer-scripts/header'] = array(
     'title'            => 'Header Scripts',
     'page callback'    => 'drupal_get_form',
-    'page arguments'   => array('header_and_footer_scripts_header_settings'),
+    'page arguments'   => array('hfs_header_settings'),
     'access arguments' => array('administer hfs module'),
     'description'      => 'Allow to add scripts and styles from the frontend under Head section.',
     'file'             => 'hfs.admin.inc',
@@ -34,7 +34,7 @@ function hfs_menu() {
   $items['admin/config/development/header-and-footer-scripts/body'] = array(
     'title'            => 'Body Scripts',
     'page callback'    => 'drupal_get_form',
-    'page arguments'   => array('header_and_footer_scripts_body_settings'),
+    'page arguments'   => array('hfs_body_settings'),
     'access arguments' => array('administer hfs module'),
     'description'      => 'Allow to add scripts and styles from the frontend at the start of BODY Tag.',
     'file'             => 'hfs.admin.inc',
@@ -45,7 +45,7 @@ function hfs_menu() {
   $items['admin/config/development/header-and-footer-scripts/footer'] = array(
     'title'            => 'Footer Scripts',
     'page callback'    => 'drupal_get_form',
-    'page arguments'   => array('header_and_footer_scripts_footer_settings'),
+    'page arguments'   => array('hfs_footer_settings'),
     'access arguments' => array('administer hfs module'),
     'description'      => 'Allow to add scripts and styles from the frontend just before the end of BODY Tag.',
     'file'             => 'hfs.admin.inc',
